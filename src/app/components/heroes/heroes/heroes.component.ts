@@ -33,6 +33,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.getHeroes().subscribe({
       next: newHeros => this.heroes = newHeros,
       error : err => console.log(err)
+      
     })
   }
 
