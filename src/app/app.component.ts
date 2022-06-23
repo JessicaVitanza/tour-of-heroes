@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
 
-  title: string = 'Tour of Heroes';
+  title: string = 'TRY VEGAN';
   // students: string[] = ['pippo', 'pluto', 'paperina', 'minnie', 'paperone', 'topolino', 'gastone'];
 
   // students2: any[] = [

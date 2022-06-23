@@ -2,22 +2,129 @@
 h1 {
   margin-bottom: 0;
 }
-nav a {
-  padding: 1rem;
+
+
+.search{
+  z-index: 12;
+}
+
+
+.hamburger-menu{
+  display: block;
+
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(270deg);
+
+
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 25px;
+  margin-left: 10px;
+  z-index: 11;
+
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 16px;
+  background-color: #fff;
+  transition-duration: .25s;
+
+}
+.menu__btn > span::before {
+  content: '';
+  top: -10px;
+
+}
+.menu__btn > span::after {
+  content: '';
+  top: 10px;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin-top: 100px;
+  padding: 25px 0px;
+  list-style: none;
+  background-image: url(./services/assets-services/pattern1.jpeg);
+  background-size: contain;
+  box-shadow: 4px 10px 12px #563b309c;
+  transition-duration: .40s;
+ z-index: 1;
+display: flex;
+flex-direction: column;
+}
+.menu__item {
+  font-family: 'Varela Round', sans-serif;
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #8b916dbf;
+  font-size: 30px;
+  font-weight: 600;
   text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #e8e8e8;
-  color: #3d3d3d;
-  border-radius: 4px;
+  transition-duration: .35s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.menu__item:hover {
+  background-color:#fff;
+  color: #563b30;
+  text-shadow: none;
+  text-decoration: none;
 }
 
-nav a:hover {
-  color: white;
-  background-color: #42545C;
-}
-nav a.active {
-  background-color: black;
+.menu__item:active {
+  background-color: #563b30;
+  color: #fff;
+  text-decoration: none;
 }
 
-
+.titile{
+  font-family: 'Hammersmith One', sans-serif;
+  margin-left: 0px;
+  margin-top: -120px;
+  padding: 30px 90px ;
+  background-color: #bfa583; 
+  width: 100%;
+  color: #fff;
+  text-shadow: #563b3051 2px 2px 2px;
+    letter-spacing: 2px;
+    position: fixed;
+    z-index: 10;
+}

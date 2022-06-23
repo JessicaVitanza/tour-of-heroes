@@ -1,14 +1,20 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hammersmith+One&family=Varela+Round&display=swap');
+  </style>
+
 <div *ngIf="hero">
 
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{hero.id}}</div>
-    <div>
-      <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    <h2 class="title">{{hero.name | uppercase}}</h2>
+    <div class="ul-txt">
+      <span class="ul-li">Portata: </span> {{hero.scope}}<br> <br>
+      <span class="ul-li">Ingredienti: </span>{{hero.ingredients}} <br> <br>
+      <span class="ul-li">Preparazione: </span> {{hero.preparation}}<br> <br>
+      <span class="ul-li">Tempo: </span> {{hero.time}}<br> <br>
+      <span class="ul-li">Difficoltà: </span>{{hero.facility}}
     </div>
-    <button type="button" (click)="save()">save</button>
+  
   </div>
 
 
 
-  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="goBack()">◀</button>

@@ -1,5 +1,10 @@
 /* DashboardComponent's private CSS styles */
 
+body{
+  background-image: url('./assets-dashboard/pattern1.jpeg');
+  margin-top: -120px;
+}
+
 h2 {
   text-align: center;
 }
@@ -51,4 +56,93 @@ a {
 
 a:hover {
   background-color: black;
+}
+
+.intro{
+  font-family: 'Varela Round', sans-serif;
+     color: #563b30; /* #8b916d */
+ margin-top: 20px;
+ padding-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    align-self: center;
+    text-align: center;
+
+}
+
+
+.carousel-control {
+  border-radius: 26px;
+}
+
+
+.carousel {
+  background-color: #8b916d;
+  color: #fff;
+  border-radius: 26px;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 350px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+.item-img {
+  border-radius: 26px 26px 0px 0px;
+  width: 100%;
+}
+
+.item-title{
+text-shadow: #563b30 2px 2px 2px;
+font-family: 'Varela Round', sans-serif;
+}
+
+.item-txt{
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.item-ul{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.carousel-control{
+  background-color: transparent;
+  height: auto;
+}
+
+.carousel-control:hover{
+  background-color: transparent;
+  
+}
+
+.why{
+  color: #8b916d;
+  font-family: 'Varela Round', sans-serif;
+  margin: 60px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.why1{
+  color: #8b916d;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 30px;
+  margin-left: 0px;
+  text-transform: uppercase;
+}
+
+.why-txt{
+  color: #563b30;
+  font-family: 'Varela Round', sans-serif;
+  margin-left: 0px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
 }

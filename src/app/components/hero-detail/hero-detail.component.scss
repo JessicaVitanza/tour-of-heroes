@@ -1,6 +1,6 @@
 /* HeroDetailComponent's private CSS styles */
 label {
-  color: #435960;
+  color: #8b916d;
   font-weight: bold;
 }
 input {
@@ -10,16 +10,40 @@ input {
 button {
   margin-top: 20px;
   margin-right: .5rem;
-  background-color: #eee;
+  background-color: #8b916d75;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 16px;
   font-size: 1rem;
+  color: #fff;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #8b916d;
 }
 button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.title{
+  color: #8b916d75;
+  font-size: 40px;
+  font-family: 'Varela Round', sans-serif;
+  margin-top: -90px;
+  margin-left: 30px;
+  letter-spacing: 12px;
+}
+
+.ul-txt{
+  font-family: 'Varela Round', sans-serif;
+  color: #8b916d;
+  font-size: 25px;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+.ul-li{
+  color:#452f18ef;
+  text-transform: uppercase;
+  font-family: 'Varela Round', sans-serif;
 }

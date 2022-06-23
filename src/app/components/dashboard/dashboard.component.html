@@ -1,8 +1,165 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-    {{hero.name}}
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hammersmith+One&family=Varela+Round&display=swap');
+    </style>
+
+
+<h2 class="intro"> Vuoi provare la'alimentazione vegetale? <br>
+  Ecco qui alcune ricette vegan, semplici, facili e veloci.</h2>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:50%;">
+          
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="item-img" src="./assets/babaganoush.png" alt="" style="width:100%;">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12" >
+            <h2 class="item-title">
+             <strong>ANTIPASTI</strong>
+            </h2>
+            <br>
+            <h3 class="item-txt">
+              In questa sezione troverai:
+            </h3>
+            <br>
+            <h4 class="item-ul">Babaganoush, Hummus di ceci, <br>  Guacamole, Torta salata con spinaci.</h4>
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="./assets/chipscavolo.png" alt="" style="width:100%;">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12 text-center">
+          <h2 class="item-title">
+            <strong>PRIMI</strong>
+           </h2>
+           <br>
+           <h3 class="item-txt">
+               In questa sezione troverai:
+           </h3>
+           <br>
+            <h4 class="item-ul">Lasagne con ragù di lenticchie, Gnocchi alla zucca, <br> Risotto porcini e tartufo, Ravioli con ricotta vegan e noci.</h4>
+            
+        </div>
+    </div>
+    </div>
+  
+    <div class="item">
+      <img class="item-img" src="./assets/risotto.png" alt="" style="width:100%;">
+      <div class="header-text hidden-xs">
+        <div class="col-md-12 text-center">
+            <h2 class="item-title">
+               <strong>SECONDI</strong>
+            </h2>
+            <br>
+            <h3 class="item-txt">
+              In questa sezione troverai:
+            </h3>
+            <br>
+            <h4 class="item-ul">Farinata, Burger di fagioli rossi, Cotolette di ceci, <br> Polpette di lenticchie, Nuggets di tofu.</h4>
+        
+        </div>
+    </div>
+    </div>
+
+    <div class="item">
+        <img class="item-img" src="./assets/nuggets.png" alt="" style="width:100%;">
+        <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+                <h2 class="item-title">
+                <strong>CONTORNI</strong>
+                </h2>
+                <br>
+                <h3 class="item-txt">
+                  In questa sezione troverai:
+                </h3>
+                <br>
+            <h4 class="item-ul">Chips di cavolo nero, Fiori di zucca fritti, <br> Patate dolci al forno, Zucchine ripiene.</h4>
+           
+                
+            </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="item-img" src="./assets/pancakes.png" alt="" style="width:100%;">
+        <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+                <h2 class="item-title">
+                <strong>DOLCI</strong>
+                </h2>
+                <br>
+                <h3 class="item-txt">
+                  In questa sezione troverai:
+                </h3>
+                <br>
+            <h4 class="item-ul">Torta sacher, Banana bread, Pancackes, Brownies senza glutine, Cookies ai fiocchi di avena, Crostata di fragole.</h4>
+            
+                
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="item-img" src="./assets/besciamella.png" alt="" style="width:100%;">
+        <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+                <h2 class="item-title">
+                <strong>CREME E SALSE</strong>
+                </h2>
+                <br>
+                <h3 class="item-txt">
+                  In questa sezione troverai:
+                </h3>
+                <br>
+            <h4 class="item-ul">Besciamella, Spalmabile di tofu, Crema al limone, <br> Mousse al cioccolato e avocado, Smoothie di frutta.</h4>
+            
+
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
   </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="heroes-menu">
+
+  <h2 class="why">Perchè mangiare vegan?</h2>
+  <span class="why-txt">
+    <h4 class="why1">Per la salute</h4>
+    Sempre più studi testimoniano come un’alimentazione basata sui cibi vegetali sia protettiva nei confronti di numerose patologie cronico-degenerative mentre il consumo di grassi saturi, colesterolo e proteine animali predispone all’insorgenza di obesità, diabete, ipertensione, malattie cardiovascolari, osteoporosi,  gotta, demenza senile e tumori.
+
+   <br> I morti dovuti alle malattie cardiache (soprattutto infarto) hanno ormai raggiunto cifre da veri e propri bollettini di guerra: ogni anno i decessi sono 17 milioni nel mondo, di cui 4 milioni nella sola Europa. <br> Tutto ciò mentre recenti studi americani ed europei hanno dimostrato che una dieta vegetariana equilibrata e povera di grassi permette di ridurre il rischio di cancro del 40%, di infarto e altre malattie cardiache del 30%, di diabete del 60%, di calcoli al fegato del 60%, di obesità del 40%, di intossicazioni alimentari dell’80%, di ipertensione dal 22 al 68%.  </span>
+
+  <span class="why-txt">
+    <h4 class="why1">Per l'ambiente</h4>
+    Mangiare vegan significa un impatto drasticamente più ridotto sulle risorse del nostro pianeta, che notoriamente non sono infinite. <br> Significa un minor consumo di energia, di acqua, di pesticidi, di inquinanti, di farmaci. Significa minor necessità di terra e di conseguenza minore deforestazione. <br> Il settore della carne è il secondo maggior inquinatore dopo quello dell'automobile e il 70% dell'acqua utilizzata sul pianeta è consumato dalla zootecnia e dall'agricoltura, i cui prodotti servono in gran parte a nutrire gli animali d'allevamento. <br> L’impronta ecologica (footprint) di chi mangia carne è molto più elevata di chi non la consuma: si è calcolato che essa incide per circa il 30% in più e, come se ciò non bastasse, il consumo di carne su scala internazionale sta aumentando costantemente, soprattutto nei paesi emergenti.
+  </span>
+
+
+  <span class="why-txt">
+    <h4 class="why1">Per gli animali</h4>
+    Chi sceglie di vivere vegan prende oggettivamente atto che gli animali (tutti e non solo alcuni) non sono cibo, bensì esseri senzienti in grado di provare piacere e dolore, gioia ed emozioni, angoscia e paura… e sono anch’essi in grado di amare e di soffrire! <br>
+    Gli animali che arrivano nei piatti di chi mangia carne nascono e vivono le loro brevi e innaturali vite in enormi capannoni maleodoranti fatti di cemento e di sbarre dove non è assolutamente possibile vivere secondo la loro natura: sono stati così trasformati da incredibili esseri viventi in semplici oggetti. <br>
+    Vittime innocenti del nostro spietato sistema economico e produttivo, miliardi di creature vivono le loro non-vite in gabbie anguste e in spazi sovraffollati, senza mai vedere il cielo né un prato verde, senza conoscere il sole, l’aria, la minima libertà di movimento e di relazione con gli altri animali della loro specie.  </span>
+
 </div> 
 
-<app-hero-search></app-hero-search>
+
+
+</body>

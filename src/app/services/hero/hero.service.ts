@@ -10,7 +10,7 @@ import { MessageService } from '../message/message.service';
 })
 export class HeroService {
 
-  private heroesUrl = 'https://628778b1e9494df61b39b038.mockapi.io/heroes';  // URL to web api
+  private heroesUrl = 'https://628778b1e9494df61b39b038.mockapi.io/recipes';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -79,14 +79,6 @@ addHero(hero: Hero): Observable<Hero> {
   return this.http.post<Hero>(this.heroesUrl, hero, this.httpOptions).pipe(
     tap((newHero: Hero) => this.log(`added hero w/ id=${newHero.id}`)),
     catchError(this.handleError<Hero>('addHero'))
-  );
-}
-
-deleteHero(id: string) : Observable<Hero>{
-  const heroUrl = this.heroesUrl + '/' + id;
-  return this.http.delete<Hero>(heroUrl, this.httpOptions).pipe(
-    tap(_ => this.log(`deleted hero id=${id}`)),
-    catchError(this.handleError<Hero>('deleteHero'))
   );
 }
 
